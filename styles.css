@@ -16,7 +16,7 @@ body {
 .container {
   background-color: orange;
   margin: 30px auto;
-  max-width: 600px;
+  max-width: 95%;
   height: 700px;
   border: 1px solid black;
   display: flex;
@@ -97,7 +97,7 @@ body {
 }
 
 li {
-  width: 500px;
+  width: 90%;
   padding: 5px 5px;
   border: 1px solid black;
   border-radius: 5px;
@@ -117,4 +117,10 @@ li {
 .finished {
   text-decoration: line-through;
   text-decoration-color: red;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 600px;
+  }
 }
