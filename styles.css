@@ -128,4 +128,8 @@ li {
   .container {
     width: 600px;
   }
+  #input {
+    padding: 5px 10px;
+    width: 350px;
+  }
 }
