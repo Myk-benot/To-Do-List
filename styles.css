@@ -6,68 +6,49 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background-color: rgb(170, 126, 72);
+  background-color: #f1ebeb;
 }
 
 * {
   user-select: none;
 }
 
+.title {
+  font-weight: bolder;
+  font-style: italic;
+}
+
 .container {
-  background-color: chocolate;
-  margin: 30px auto;
-  max-width: 95%;
-  height: 700px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  box-shadow: 5px 5px 15px #000;
-  overflow: hidden;
-}
-
-.label {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-#input {
-  padding: 5px 10px;
-  width: 400px;
-}
-
-.btn {
-  border: none;
-  padding: 10px 40px;
-  background-color: orange;
-  font-weight: bold;
-  border-radius: 10px;
-}
-
-.btn:hover {
-  background-color: rgb(170, 126, 72);
-}
-
-.input-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 95%;
-  height: 200px;
-  border-bottom: 1px solid cadetblue;
+  height: 100%;
+  padding: 2rem;
 }
 
 .list {
-  padding: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 75%;
   list-style: none;
-  width: 100%;
-  height: 500px;
+}
+
+li {
+  min-width: 300px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  word-wrap: break-word;
+}
+
+.deleteBtn {
+  float: right;
+  border: none;
+  background-color: transparent;
+  color: red;
 }
 
 .modal-div {
@@ -96,43 +77,27 @@ body {
   padding: 5px 10px;
 }
 
-li {
-  width: 90%;
-  padding: 5px 5px;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: #fff;
-  word-wrap: break-word;
+.input-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-.deleteBtn {
-  float: right;
-  background-color: orange;
+.input-box {
+  text-align: center;
+  padding: 5px 50px;
+}
+
+.btn {
+  padding: 5px 50px;
   font-weight: bold;
-  border: none;
+  background-color: cadetblue;
   border-radius: 5px;
-  padding: 3px 8px;
 }
 
-.deleteBtn:hover {
-  background-image: rgb(170, 126, 72);
-  cursor: pointer;
-}
-
-.finished {
-  text-decoration: line-through;
-  text-decoration-color: red;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 600px;
-  }
-}
-
-@media (max-width: 768px) {
-  #input {
-    padding: 5px 10px;
-    width: 350px;
-  }
+.btn:hover {
+  background-color: #f1ebeb;
+  border-color: rgb(1, 77, 1);
+  color: rgb(1, 77, 1);
 }
